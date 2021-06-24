@@ -1,0 +1,64 @@
+body {
+  font-family: "Boogaloo", cursive;
+  background: black;
+}
+
+.pokemon {
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+  background: #fff;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  transform: translateY(30%);
+}
+
+.poke {
+  margin-top: 15%;
+  margin-left: 45%;
+}
+
+.text {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+
+#name {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#img {
+  width: 15vw;
+}
+
+.pokeball {
+  width: 7vw;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 30px;
+  box-shadow: 0 15px 25px -10px rgba(233, 236, 245, 0.5);
+  transition: 0.4s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.pokeball:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 17px 25px -6px rgba(233, 241, 241, 0.5);
+}
